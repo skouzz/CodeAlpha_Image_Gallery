@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="logo-container">
+        <a href="javascript:location.reload()" id="logo-link">
+            <img src="images/skouzz.png" alt="Website Logo" class="logo">
+        </a>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/oussamabenmahmoud/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/skouzz" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <section class="search">
+        <img src="images/search-img.jpg" alt="search-img">
+        <div class="content">
+            <h1>Image Gallery with JavaScript</h1>
+            <p>Search and download any images within a second</p>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search Images">
+                <button id="search-button" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gallery">
+        <ul class="images"></ul>
+        <button class="load-more">Load More</button>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="Enlarged image">
+            <div class="lightbox-controls">
+                <a id="download-button" href="" download aria-label="Download">
+                    <i class="uil uil-import"></i> Download
+                </a>
+                <span class="close" id="lightbox-close">&times;</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Made by: Oussama Ben Mahmoud - SkOouZz © | CodeAlpha</p>
+        <img src="codealpha.png" alt="CodeAlpha Logo" class="footer-logo">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
